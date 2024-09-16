@@ -36,7 +36,7 @@ dependencies {
     testImplementation(libs.junit)
 
     implementation("org.apache.httpcomponents:httpclient:4.5.13") // or latest version
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.2")
 
 
     // IntelliJ Platform Gradle Plugin Dependencies Extension - read more: https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin-dependencies-extension.html
