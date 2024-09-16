@@ -1,0 +1,37 @@
+<idea-plugin>
+    <id>com.intrucept.appsecops.intellijplugin</id>
+    <name>intrucept-appsecops</name>
+    <vendor>Intrucept Labs</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <resource-bundle>messages.MyBundle</resource-bundle>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Intrucept Scans"
+                    factoryClass="com.intrucept.appsecops.intellijplugin.toolWindow.MyToolWindowFactory"
+                    anchor="bottom"
+                    secondary="true" />
+    </extensions>
+
+    <applicationListeners>
+        <listener class="com.intrucept.appsecops.intellijplugin.listeners.MyApplicationActivationListener"
+                  topic="com.intellij.openapi.application.ApplicationActivationListener" />
+    </applicationListeners>
+
+    <actions>
+        <action id="PerformSASTScanAction"
+                class="com.intrucept.appsecops.intellijplugin.actions.PerformSASTScanAction"
+                text="Perform SAST Scan"
+                description="Start a SAST scan for the current project">
+            <add-to-group group-id="ToolsMenu" anchor="last" />
+        </action>
+        <action id="PerformSCAScanAction"
+                class="com.intrucept.appsecops.intellijplugin.actions.PerformSCAScanAction"
+                text="Perform SCA Scan"
+                description="Start an SCA scan for the current project">
+            <add-to-group group-id="ToolsMenu" anchor="last" />
+        </action>
+    </actions>
+
+</idea-plugin>
