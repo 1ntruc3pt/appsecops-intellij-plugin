@@ -78,7 +78,7 @@ class PerformSASTScanAction : AnAction() {
 
     private suspend fun sendToSASTAPI(file: File, project: Project): String = withContext(Dispatchers.IO) {
         val config = readConfig(project)
-        val url = URL("https://appsecops-api.intruceptlabs.com/api/v1/integrations/performSASTScan")
+        val url = URL("https://appsecops-api.intruceptlabs.com/api/v1/integrations/sast-scans")
         val boundary = "----WebKitFormBoundary7MA4YWxkTrZu0gW"
 
         with(url.openConnection() as HttpURLConnection) {
