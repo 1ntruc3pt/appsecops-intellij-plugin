@@ -35,7 +35,7 @@ repositories {
 dependencies {
     testImplementation(libs.junit)
 
-    implementation("org.apache.httpcomponents:httpclient:4.5.13") // or latest version
+    implementation("org.apache.httpcomponents:httpclient:4.5.14") // or latest version
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
 
 
