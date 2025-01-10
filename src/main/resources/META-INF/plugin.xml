@@ -3,6 +3,8 @@
     <name>intrucept-appsecops</name>
     <vendor>Intrucept Labs</vendor>
 
+    <idea-version since-build="233.0" until-build="243.*" />
+
     <depends>com.intellij.modules.platform</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>

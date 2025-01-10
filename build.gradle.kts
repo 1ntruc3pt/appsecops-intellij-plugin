@@ -20,6 +20,10 @@ kotlin {
     jvmToolchain(17)
 }
 
+
+
+
+
 // Configure project's dependencies
 repositories {
     mavenCentral()
